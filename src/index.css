@@ -15,26 +15,57 @@
 }
 
 .filter-bar {
+  position: relative;
   padding: .6em;
   font-family: 'Hind Siliguri', sans-serif;
-  width: max-content;
+  width: 70%;
+  height: 30px;
   border: 2px solid;
-  align-items: flex-start;
   display: flex;
   flex-direction: row;
 }
 
 .tabs {
-  margin-right: 50px;
+  margin-left: 10px;
+  position: absolute;
+  left: 0;
+  display: flex;
+  flex-direction: row;
 }
 
+.sort-filter {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 0;
+}
+
+
+.app-content {
+  padding: .6em;
+  margin: 20px 0px;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.product-boxes {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin: 7px;
+}
+
+img {
+  margin: 5px;
+  height: 300px;
+}
 
 
 span {
   margin: 3px;
-}
-
-body {
-  margin: 0;
-  font-family: 'Hind Siliguri', sans-serif;
+  position: relative;
 }
