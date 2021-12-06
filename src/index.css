@@ -1,13 +1,40 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Playfair+Display&display=swap');
+
+.App {
+  margin: 50px 100px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 7em;
+  font-weight: bold;
+  margin: .6em;
+}
+
+.filter-bar {
+  padding: .6em;
+  font-family: 'Hind Siliguri', sans-serif;
+  width: max-content;
+  border: 2px solid;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+}
+
+.tabs {
+  margin-right: 50px;
+}
+
+
+
+span {
+  margin: 3px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Hind Siliguri', sans-serif;
 }
