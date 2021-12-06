@@ -1,9 +1,11 @@
+import React from 'react';
+
 const Footer = () => {
 	return(
-		<div>
+		<Footer className="footer">
 			store name est 2022
 			socials
-		</div>
+		</Footer>
 	)
 }
 

@@ -1,8 +1,10 @@
+import React from 'react';
+
 const Header = () => {
 	return(
-		<div>
-			Hope's Store
-		</div>
+		<Header className="header">
+			Hope's Storee
+		</Header>
 	)
 }
 
