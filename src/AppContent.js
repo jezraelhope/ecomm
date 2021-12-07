@@ -10,32 +10,48 @@ const AppContent = () => {
 	return (
 		<div className="app-content">
 			<div className="product-boxes">
-				<img src={shoes} alt="ninewest heels" />
+				<img
+					className="product-photo"
+					src={shoes}
+					alt="ninewest heels"
+				/>
 				<div>Nine West Lilac Heels</div>
 				<div>$16.99</div>
 			</div>
 			<div className="product-boxes">
-				<img src={ccblouse} alt="cc blouse" />
+				<img className="product-photo" src={ccblouse} alt="cc blouse" />
 				<div>Casual Corner Vintage Blouse</div>
 				<div>$12.99</div>
 			</div>
 			<div className="product-boxes">
-				<img src={cardigan} alt="at cardigan" />
+				<img
+					className="product-photo"
+					src={cardigan}
+					alt="at cardigan"
+				/>
 				<div>Anne Taylor 100% Silk Cardigan</div>
 				<div>$9.99</div>
 			</div>
 			<div className="product-boxes">
-				<img src={satin} alt="satin blouse" />
+				<img className="product-photo" src={satin} alt="satin blouse" />
 				<div>Satin Blouse</div>
 				<div>$14.99</div>
 			</div>
 			<div className="product-boxes">
-				<img src={silkpajama} alt="silk pajama" />
+				<img
+					className="product-photo"
+					src={silkpajama}
+					alt="silk pajama"
+				/>
 				<div>August Silk Pajama Top</div>
 				<div>$9.99</div>
 			</div>
 			<div className="product-boxes">
-				<img src={rlldress} alt="Ralph Lauren Dress" />
+				<img
+					className="product-photo"
+					src={rlldress}
+					alt="Ralph Lauren Dress"
+				/>
 				<div>Ralph Lauren Silk Dress</div>
 				<div>$17.99</div>
 			</div>

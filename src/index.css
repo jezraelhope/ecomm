@@ -8,13 +8,47 @@
 }
 
 .header {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  position: relative;
+}
+
+.header header {
+  width: 30%;
   font-family: 'Playfair Display', sans-serif;
   font-size: 7em;
   font-weight: bold;
-  margin: .6em;
+  margin: .6em .6em .6em 0;
+}
+
+.header .tabs {
+  font-size: 2em;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0;
+  width: 60%;
+}
+
+.header .tabs .tab-name {
+  width: 5em;
+}
+
+.header .shopping-cart {
+  width: 10%;
+  position: absolute;
+  right: 0;
+  margin: .2em;
+}
+
+.header .shopping-cart img {
+  width: 2em;
 }
 
 .filter-bar {
+  align-items: center;
   position: relative;
   padding: .6em;
   font-family: 'Hind Siliguri', sans-serif;
@@ -23,49 +57,28 @@
   border: 2px solid;
   display: flex;
   flex-direction: row;
+  position: relative;
 }
-
-.tabs {
-  margin-left: 10px;
-  position: absolute;
-  left: 0;
-  display: flex;
-  flex-direction: row;
-}
-
-.sort-filter {
-  margin-right: 10px;
-  display: flex;
-  flex-direction: row;
-  position: absolute;
-  right: 0;
-}
-
 
 .app-content {
-  padding: .6em;
-  margin: 20px 0px;
-  width: 70%;
+  font-family: 'Hind Siliguri', sans-serif;
+  width: 60%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+  margin: 3em;
 }
 
 .product-boxes {
-  width: 30%;
+  width: 32%;
   display: flex;
   flex-direction: column;
   margin: 7px;
 }
 
-img {
+.product-photo {
   margin: 5px;
-  height: 300px;
-}
-
-
-span {
-  margin: 3px;
-  position: relative;
+  height: 400px;
+  width: 300px;
 }
