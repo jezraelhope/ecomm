@@ -1,19 +1,26 @@
 import React from 'react';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useRouteMatch
+} from "react-router-dom";
 
 import './App.css';
-import Header from './Header';
-import FilterBar from './FilterBar'
-import AppContent from './AppContent'
-import Footer from './Footer'
-
+import Home from './Home'
+import Header from './Header/';
+import Product from './Product';
 function App() {
   return (
+    <Router>
     <div className="App">
       <Header />
-      <FilterBar />
-      <AppContent />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="product/:topicId" element={<Product />} />
+      </Routes>
     </div>
+    </Router>
   );
 }
 

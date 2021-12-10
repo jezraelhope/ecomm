@@ -1,5 +1,5 @@
 import React from 'react';
-import shoppingCartIcon from "./hope-store-photos/shopping-cart.png";
+import shoppingCartIcon from "../hope-store-photos/shopping-cart.png";
 
 const Header = () => {
 	return (

@@ -1,0 +1,56 @@
+
+
+.filter-bar {
+  align-items: center;
+  position: relative;
+  padding: .6em;
+  font-family: 'Hind Siliguri', sans-serif;
+  width: 60%;
+  height: 30px;
+  border: 2px solid;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.filter-bar div {
+  width: 50%;
+}
+
+.filter-bar .sort {
+  text-align: left;
+  padding-left: 2em;
+}
+
+.filter-bar .filter {
+  text-align: right;
+  padding-right: 2em;
+}
+
+.app-content {
+  font-family: 'Hind Siliguri', sans-serif;
+  width: 65%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 3em;
+}
+
+.product-boxes {
+  display: flex;
+  flex-direction: column;
+  margin: 7px;
+  align-items: center;
+}
+
+.product-photo {
+  margin: 5px;
+  height: 400px;
+  width: 300px;
+}
+
+.product-link {
+	width: 33.3%;
+	color: "black"
+}

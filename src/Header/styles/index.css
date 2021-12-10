@@ -1,0 +1,40 @@
+
+.header {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  position: relative;
+}
+
+.header header {
+  width: 30%;
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 7em;
+  font-weight: bold;
+  margin: .6em .6em .6em 0;
+}
+
+.header .tabs {
+  font-size: 2em;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0;
+  width: 60%;
+}
+
+.header .tabs .tab-name {
+  width: 5em;
+}
+
+.header .shopping-cart {
+  width: 10%;
+  position: absolute;
+  right: 0;
+  margin: .2em;
+}
+
+.header .shopping-cart img {
+  width: 2em;
+}
