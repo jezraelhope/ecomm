@@ -52,5 +52,7 @@
 
 .product-link {
 	width: 33.3%;
-	color: "black"
+	color: black;
+	text-decoration: none;
+	font-weight: bolder;
 }
