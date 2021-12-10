@@ -1,84 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Playfair+Display&display=swap');
-
+@import './Home/styles/index.css';
+@import './Header/styles/index.css';
 .App {
   margin: 50px 100px;
   align-items: center;
   display: flex;
   flex-direction: column;
-}
-
-.header {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  width: 70%;
-  position: relative;
-}
-
-.header header {
-  width: 30%;
-  font-family: 'Playfair Display', sans-serif;
-  font-size: 7em;
-  font-weight: bold;
-  margin: .6em .6em .6em 0;
-}
-
-.header .tabs {
-  font-size: 2em;
-  margin-left: 10px;
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 0;
-  width: 60%;
-}
-
-.header .tabs .tab-name {
-  width: 5em;
-}
-
-.header .shopping-cart {
-  width: 10%;
-  position: absolute;
-  right: 0;
-  margin: .2em;
-}
-
-.header .shopping-cart img {
-  width: 2em;
-}
-
-.filter-bar {
-  align-items: center;
-  position: relative;
-  padding: .6em;
-  font-family: 'Hind Siliguri', sans-serif;
-  width: 70%;
-  height: 30px;
-  border: 2px solid;
-  display: flex;
-  flex-direction: row;
-  position: relative;
-}
-
-.app-content {
-  font-family: 'Hind Siliguri', sans-serif;
-  width: 60%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  margin: 3em;
-}
-
-.product-boxes {
-  width: 32%;
-  display: flex;
-  flex-direction: column;
-  margin: 7px;
-}
-
-.product-photo {
-  margin: 5px;
-  height: 400px;
-  width: 300px;
 }
