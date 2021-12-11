@@ -5,7 +5,7 @@
   position: relative;
   padding: .6em;
   font-family: 'Hind Siliguri', sans-serif;
-  width: 60%;
+  width: 100%;
   height: 30px;
   border: 2px solid;
   display: flex;
@@ -29,7 +29,7 @@
 
 .app-content {
   font-family: 'Hind Siliguri', sans-serif;
-  width: 65%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
