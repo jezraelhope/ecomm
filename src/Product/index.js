@@ -8,12 +8,15 @@ import {
 import Image from './Image';
 import ProductDescription from './ProductDescription'
 
-function Product () {
+function Product (props) {
+	let cartNumber = props.cartNumber;
+
 	let { topicId } = useParams();
+	console.log(topicId)
 	return (
 		<div className="product-container">
 			<Image productId={topicId} />
-			<ProductDescription productId={topicId}/>
+			<ProductDescription productId={topicId} cartNumber={cartNumber}/>
 		</div>
 	)
 }

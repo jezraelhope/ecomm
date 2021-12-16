@@ -1,4 +1,11 @@
 .App {
+  margin: 50px 100px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.App {
   text-align: center;
   margin: 0 auto;
   align-items: center;

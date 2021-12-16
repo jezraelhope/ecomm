@@ -22,7 +22,8 @@ export default [
 		"size":"7 (US)",
 		"condition":"good",
 		"color":"lilac",
-		"sold":false
+		"sold":false,
+		"inventory": 1
 
 	},
 	{
@@ -35,7 +36,8 @@ export default [
 		"size":"Large",
 		"condition":"good",
 		"color":"off white",
-		"sold": false
+		"sold": false,
+		"inventory": 1
 
 	},
 	{
@@ -48,7 +50,8 @@ export default [
 		"size":"Large",
 		"condition":"good",
 		"color":"purple",
-		"sold": false
+		"sold": false,
+		"inventory": 1
 
 	},
 	{
@@ -61,7 +64,8 @@ export default [
 		"size":"Large",
 		"condition":"good",
 		"color":"off white",
-		"sold": true
+		"sold": true,
+		"inventory": 1
 
 	},
 	{
@@ -74,7 +78,8 @@ export default [
 		"size":"Medium",
 		"condition":"fair",
 		"color":"yellow",
-		"sold": false
+		"sold": false,
+		"inventory": 1
 
 	},
 	{
@@ -87,7 +92,8 @@ export default [
 		"size":"Large",
 		"condition":"good",
 		"color":"sage green",
-		"sold": false
+		"sold": false,
+		"inventory": 1
 
 	}
 ]

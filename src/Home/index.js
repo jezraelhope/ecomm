@@ -6,7 +6,6 @@ import AppContent from './AppContent'
 function Home() {
   return (
     <div className="App">
-      <FilterBar />
       <AppContent />
     </div>
   );

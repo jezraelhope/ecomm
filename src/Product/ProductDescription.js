@@ -1,7 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import productDetails from './productDetails';
 
-const ProductDescription = ({productId}) => {
+
+
+
+const ProductDescription = ({productId}, props) => {
+	const [cartNumber, setCartNumber] = useState(0)
+
+	const addToCart = () => {
+		setCartNumber(cartNumber + 1)
+	}
+
+	console.log(cartNumber)
+
 	const product = productDetails.find(elem => {
 		return elem.id === productId
 	})
@@ -11,9 +22,8 @@ const ProductDescription = ({productId}) => {
 				<span className="product-price">${product.price}</span>
 				<span className="product-size">size: {product.size}</span>
 			</div>
-			<button className='add-to-cart'>
+			<button className='add-to-cart' onClick={addToCart}>
 				{product.sold ? "Sold Out" : "Add to Cart"}
-				{console.log(product.sold)}
 			</button>
 			<div className='secondary-product-details-container'>
 
