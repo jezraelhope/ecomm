@@ -9,7 +9,7 @@ import {
 const Header = (props) => {
 
 	const filterItems = (e) => {
-		props.changeTabname(e.target.id)
+		props.setTabname(e.target.id)
 	}
 
 	// const path = [...new Set(location.pathname.split('/'))].join('/')
@@ -37,7 +37,7 @@ const Header = (props) => {
 			</div>
 			<div className="shopping-cart">
 				<img src={shoppingCartIcon} alt="shopping cart"></img>
-				<span>{props.cartNumber}</span>
+				<span className="cart-number">{props.cartNumber}</span>
 			</div>
 		</div>
 	);

@@ -37,9 +37,16 @@
   position: absolute;
   right: 0;
   margin: .2em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .header .shopping-cart img {
   width: 2em;
   padding-top: 1em;
+}
+
+.cart-number {
+  padding-left: 1px;
 }

@@ -16,24 +16,25 @@ import Footer from './Footer/Footer';
 
 function App() {
 
-  const [tabName, setTabname] = useState("");
-  const [cartNumber, setCartNumber] = useState(0)
+  const [addedProducts, setAddedProducts] = useState([])
 
+  console.log(addedProducts)
+
+  const [tabName, setTabname] = useState("");
 
   return (
     <Router>
       <div className="App">
         <Header
-          changeTabname = {setTabname}
+          setTabname = {setTabname}
           tabName={tabName}
-          changeCartNumber = {setCartNumber}
-          cartNumber={cartNumber}
+
           />
         <FilterBar />
         <Routes>
           {/* <Route path="/" element={<Home />} /> */}
           <Route path="/" element={<FilteredAppContent filterBy = {tabName}/>}/>
-          <Route path=":type/:topicId" element={<Product  cartNumber={cartNumber}/>} />
+          <Route path=":type/:topicId" element={<Product addedProducts={addedProducts} setAddedProducts={setAddedProducts} />} />
         </Routes>
         <Footer />
       </div>

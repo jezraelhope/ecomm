@@ -2,20 +2,18 @@ import React, {useState} from 'react';
 import productDetails from './productDetails';
 
 
-
-
-const ProductDescription = ({productId}, props) => {
-	const [cartNumber, setCartNumber] = useState(0)
-
-	const addToCart = () => {
-		setCartNumber(cartNumber + 1)
-	}
-
-	console.log(cartNumber)
+const ProductDescription = ({productId, addedProducts, setAddedProducts}) => {
 
 	const product = productDetails.find(elem => {
 		return elem.id === productId
 	})
+
+	const addToCart = (e) => {
+		setAddedProducts(
+			[...addedProducts, product]
+		)
+	}
+	console.log(addedProducts)
 	return (<div className="details-container">
 			<div className='main-product-details'>
 				<span className="product-name">{product.name}</span>

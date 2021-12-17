@@ -46,7 +46,7 @@ export default [
 		"price": "9.99",
 		"image": [cardigan],
 		"id": "3",
-		"description": "100% Silk short sleeve cardigan. Perfect in spring or fall.",
+		"description": "100% Silk short sleeve cardigan. Perfect in spring for fall.",
 		"size":"Large",
 		"condition":"good",
 		"color":"purple",
