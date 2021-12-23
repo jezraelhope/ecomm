@@ -12,14 +12,13 @@ import FilterBar from './Home/FilterBar'
 import FilteredAppContent from './Home/AppContent';
 import Product from './Product';
 import Footer from './Footer/Footer';
+import Cart from './Header/Cart'
 
 
 function App() {
 
-  const [addedProducts, setAddedProducts] = useState([])
-
-  console.log(addedProducts)
-
+  //data
+  const [addedProducts, setAddedProducts] = useState([]);
   const [tabName, setTabname] = useState("");
 
   return (
@@ -28,13 +27,11 @@ function App() {
         <Header
           setTabname = {setTabname}
           tabName={tabName}
-
           />
-        <FilterBar />
         <Routes>
-          {/* <Route path="/" element={<Home />} /> */}
+          <Route path="/Cart" element={<Cart addedProducts = {addedProducts} />}></Route>
           <Route path="/" element={<FilteredAppContent filterBy = {tabName}/>}/>
-          <Route path=":type/:topicId" element={<Product addedProducts={addedProducts} setAddedProducts={setAddedProducts} />} />
+          <Route path=":type/:topicId" element={<Product setAddedProducts = {setAddedProducts} addedProducts = {addedProducts} />} />
         </Routes>
         <Footer />
       </div>

@@ -36,8 +36,10 @@ const Header = (props) => {
 				</Link>
 			</div>
 			<div className="shopping-cart">
-				<img src={shoppingCartIcon} alt="shopping cart"></img>
-				<span className="cart-number">{props.cartNumber}</span>
+				<Link to="/Cart" className="link-to-cart">
+					<img src={shoppingCartIcon} alt="shopping cart"></img>
+					<span className="cart-number">{props.cartNumber}</span>
+				</Link>
 			</div>
 		</div>
 	);

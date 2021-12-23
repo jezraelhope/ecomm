@@ -8,12 +8,18 @@ import {
 import Image from './Image';
 import ProductDescription from './ProductDescription'
 
-function Product (props) {
+function Product ({setAddedProducts, addedProducts}) {
+
 	let { topicId } = useParams();
+
 	return (
 		<div className="product-container">
 			<Image productId={topicId} />
-			<ProductDescription productId={topicId} addedProducts={props.addedProducts} setAddedProducts={props.setAddedProducts}/>
+			<ProductDescription
+			productId={topicId}
+			setAddedProducts = {setAddedProducts}
+			addedProducts = {addedProducts}
+			/>
 		</div>
 	)
 }

@@ -15,7 +15,7 @@ export default [
 	{
 		"name": "Nine West Lilac Heels",
 		"type": "shoes",
-		"price": "16.99",
+		"price": 16.99,
 		"image": [shoes1, shoes2],
 		"id": "1",
 		"description": "Delicate square toe heels. In good condition.",
@@ -29,7 +29,7 @@ export default [
 	{
 		"name": "Casual Corner Vintage Blouse",
 		"type": "tops",
-		"price": "12.99",
+		"price": 12.99,
 		"image": [ccblouse],
 		"id": "2",
 		"description": "Vintage blouse with ornate lace colar. Buttons are concealed.",
@@ -43,7 +43,7 @@ export default [
 	{
 		"name": "Anne Taylor 100% Silk Cardigan",
 		"type": "tops",
-		"price": "9.99",
+		"price": 9.99,
 		"image": [cardigan],
 		"id": "3",
 		"description": "100% Silk short sleeve cardigan. Perfect in spring for fall.",
@@ -57,7 +57,7 @@ export default [
 	{
 		"name": "Katie Lee Satin Blouse",
 		"type": "tops",
-		"price": "14.99",
+		"price": 14.99,
 		"image": [satin1, satin2],
 		"id": "4",
 		"description": "Beautiful Satin Blouse.",
@@ -71,7 +71,7 @@ export default [
 	{
 		"name": "August Silk Pajama Top",
 		"type": "tops",
-		"price": "13.99",
+		"price": 13.99,
 		"image": [silkpajama1, silkpajama2],
 		"id": "5",
 		"description": "100% Silk Pajama. Comes with shorts",
@@ -85,7 +85,7 @@ export default [
 	{
 		"name": "Ralph Lauren Silk Dress",
 		"type": "dresses",
-		"price": "17.99",
+		"price": 17.99,
 		"image": [rlldress1, rlldress2, rlldress3],
 		"id": "6",
 		"description": "Soft and flowy maxi dress. Outer layer is 100% silk. Lining is polyester.",
