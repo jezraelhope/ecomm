@@ -29,7 +29,7 @@ function App() {
           tabName={tabName}
           />
         <Routes>
-          <Route path="/Cart" element={<Cart addedProducts = {addedProducts} />}></Route>
+          <Route path="/Cart" element={<Cart addedProducts = {addedProducts} setAddedProducts = {setAddedProducts} />}></Route>
           <Route path="/" element={<FilteredAppContent filterBy = {tabName}/>}/>
           <Route path=":type/:topicId" element={<Product setAddedProducts = {setAddedProducts} addedProducts = {addedProducts} />} />
         </Routes>
