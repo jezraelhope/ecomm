@@ -1,6 +1,6 @@
 import React from 'react';
-import { filterData } from '../Header/util';
-import data from '../Product/productDetails';
+import { filterData } from '../Shared/utils/FilterData';
+import data from '../Data/productDetails';
 
 import {
 	Link

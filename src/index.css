@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Playfair+Display&display=swap');
 @import './Home/styles/index.css';
-@import './Header/styles/index.css';
 
 html, body {
   width: 100%;

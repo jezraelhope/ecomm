@@ -1,12 +1,13 @@
-import productDetails from "./productDetails";
+import productDetails from "../Data/productDetails";
 import './product.css'
 import React, {useState} from "react";
+import Image from './Image';
+import ProductDescription from './ProductDescription'
+
 import {
   useParams
 } from "react-router-dom";
 
-import Image from './Image';
-import ProductDescription from './ProductDescription'
 
 function Product ({setAddedProducts, addedProducts}) {
 

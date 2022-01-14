@@ -7,12 +7,12 @@ import {
 
 import './App.css';
 import Home from './Home'
-import Header from './Header/';
+import Header from './Shared/Header';
 import FilterBar from './Home/FilterBar'
 import FilteredAppContent from './Home/AppContent';
 import Product from './Product';
-import Footer from './Footer/Footer';
-import Cart from './Header/Cart'
+import Footer from './Shared/Footer/Footer';
+import Cart from './Cart'
 
 
 function App() {
@@ -29,9 +29,19 @@ function App() {
           tabName={tabName}
           />
         <Routes>
-          <Route path="/Cart" element={<Cart addedProducts = {addedProducts} setAddedProducts = {setAddedProducts} />}></Route>
+          <Route path="/Cart" element={
+            <Cart
+            addedProducts = {addedProducts}
+            setAddedProducts = {setAddedProducts}
+            />}>
+          </Route>
           <Route path="/" element={<FilteredAppContent filterBy = {tabName}/>}/>
-          <Route path=":type/:topicId" element={<Product setAddedProducts = {setAddedProducts} addedProducts = {addedProducts} />} />
+          <Route path=":type/:topicId" element={
+            <Product
+            setAddedProducts = {setAddedProducts}
+            addedProducts = {addedProducts}
+            />}
+          />
         </Routes>
         <Footer />
       </div>

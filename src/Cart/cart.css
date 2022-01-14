@@ -28,8 +28,12 @@
 	margin-left: 3em;
 }
 
-.purchased-item-details .name {
-	font-weight: 300;
+.purchased-details {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	line-height: 1.5em;
+	margin-bottom: 1.7em;
 }
 
 .item-quantity .number {
@@ -43,4 +47,5 @@
 
 .proceed-to-checkout {
 	margin: 2em;
+	width: 20em;
 }

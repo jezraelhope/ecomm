@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import productDetails from './productDetails';
+import productDetails from '../Data/productDetails';
 
 const Image = ({productId}) => {
 	const product = productDetails.find(elem => {

@@ -1,10 +1,9 @@
 import React, {useState} from 'react';
-import productDetails from './productDetails';
+import productDetails from '../Data/productDetails';
 
 
 const ProductDescription = ({productId, setAddedProducts, addedProducts}) => {
 
-	// product details iteration
 	const product = productDetails.find(elem => {
 		return elem.id === productId
 	})
@@ -23,12 +22,9 @@ const ProductDescription = ({productId, setAddedProducts, addedProducts}) => {
 				{product.sold ? "Sold Out" : "Add to Cart"}
 			</button>
 			<div className='secondary-product-details-container'>
-
-			<div className="secondary-product-details">
 				<div>Product Details: {product.description}</div>
 				<span>condition: {product.condition}</span>
 				<span>color: {product.color}</span>
-			</div>
 			</div>
 		</div>
 	)

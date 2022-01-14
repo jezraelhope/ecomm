@@ -1,15 +1,14 @@
-import shoes1 from "../hope-store-photos/shoes-lilac-ninewest-1.jpg";
-import shoes2 from "../hope-store-photos/shoes-lilac-ninewest-2.jpg";
-import ccblouse from "../hope-store-photos/top-blouse-casualcorner-1.jpg";
-import cardigan from "../hope-store-photos/top-cardigan-annetaylor-1.jpg";
-import satin1 from "../hope-store-photos/top-satin-1.jpg";
-import satin2 from "../hope-store-photos/top-satin-2.jpg";
-import silkpajama1 from "../hope-store-photos/top-silk-augustsilk-1.jpg";
-import silkpajama2 from "../hope-store-photos/top-silk-augustsilk-1.jpg";
-import rlldress1 from "../hope-store-photos/dress-rll-2.jpg";
-import rlldress2 from "../hope-store-photos/dress-rll-1.jpg";
-import rlldress3 from "../hope-store-photos/dress-rll-3.jpg";
-
+import shoes1 from "./hope-store-photos/shoes-lilac-ninewest-1.jpg";
+import shoes2 from "./hope-store-photos/shoes-lilac-ninewest-2.jpg";
+import ccblouse from "./hope-store-photos/top-blouse-casualcorner-1.jpg";
+import cardigan from "./hope-store-photos/top-cardigan-annetaylor-1.jpg";
+import satin1 from "./hope-store-photos/top-satin-1.jpg";
+import satin2 from "./hope-store-photos/top-satin-2.jpg";
+import silkpajama1 from "./hope-store-photos/top-silk-augustsilk-1.jpg";
+import silkpajama2 from "./hope-store-photos/top-silk-augustsilk-1.jpg";
+import rlldress1 from "./hope-store-photos/dress-rll-2.jpg";
+import rlldress2 from "./hope-store-photos/dress-rll-1.jpg";
+import rlldress3 from "./hope-store-photos/dress-rll-3.jpg";
 
 export default [
 	{
