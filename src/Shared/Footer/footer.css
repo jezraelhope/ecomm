@@ -1,5 +1,25 @@
 footer {
-	padding-top: 3em;
-	height: 10em;
+	display: flex;
+	flex-direction: column;
+	line-height: 1.5em;
+	position: absolute;
+	bottom: 0;
+	margin: 3em;
+	padding: 0 3em;
+	height: 2.5em;
 	width: 100%;
+}
+
+.socials {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin: auto 0;
+}
+
+.socials img {
+	height: 1.5em;
+	width: 1.5em;
+	margin: .5em;
 }

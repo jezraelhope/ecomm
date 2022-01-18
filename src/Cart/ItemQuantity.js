@@ -17,12 +17,29 @@ const ItemQuantity = (props) => {
 
 	return (
 		<div className="item-quantity">
-			<button value={props.item.id} onClick={handleChange}>-</button>
-			<span>{props.itemCount}</span>
-			<button onClick={handleChange} >+</button>
-			<button onClick={(e) => removeItem(e, props.items, props.setAddedProducts, props.setCartItems)} className="remove" value={props.item.id}>remove</button>
+			<div className="increment-decrement">
+				<button value={props.item.id} onClick={handleChange}>
+					-
+				</button>
+				<span>{props.itemCount}</span>
+				<button onClick={handleChange}>+</button>
+			</div>
+			<button
+				className="remove-item"
+				onClick={(e) =>
+					removeItem(
+						e,
+						props.items,
+						props.setAddedProducts,
+						props.setCartItems
+					)
+				}
+				value={props.item.id}
+			>
+				remove
+			</button>
 		</div>
-	)
+	);
 }
 
 export default ItemQuantity
