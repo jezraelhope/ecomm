@@ -10,22 +10,22 @@ import "./styles/cart.css";
 const Cart = (props) => {
 	const items = props.addedProducts;
 	const [cartItems, setCartItems] = useState(initialCartItems(items));
-	const [itemCount, setItemCount] = useState(1);
+	const [cartCount, setCartCount] = useState(1);
 
 	return (
 		<div className="shopping-cart-container">
 			<h1 className="shopping-cart">Shopping Cart</h1>
 			<AddedToCart
-				itemCount={itemCount}
-				setItemCount={setItemCount}
+				cartCount={cartCount}
+				setCartCount={setCartCount}
 				cartItems={cartItems}
 				setCartItems={setCartItems}
 				setAddedProducts={props.setAddedProducts}
 				items={items}
 			/>
 			<SubTotal
-				itemCount={itemCount}
-				setItemCount={setItemCount}
+				cartCount={cartCount}
+				setCartCount={setCartCount}
 				cartItems={cartItems}
 				setCartItems={setCartItems}
 			/>

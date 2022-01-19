@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from "react";
 
-import ItemQuantity from './ItemQuantity';
-import AddedToCartDetails from './AddedToCartDetails'
-
+import ItemQuantity from "./ItemQuantity";
+import AddedToCartDetails from "./AddedToCartDetails";
 
 const AddedToCart = (props) => {
+	const [subSubTotal, setSubSubTotal] = useState(0);
+	console.log(subSubTotal);
+
 	return (
 		<div className="items-container">
 			{props.cartItems.map((item) => {
@@ -14,8 +16,8 @@ const AddedToCart = (props) => {
 						<div className="purchased-details">
 							<AddedToCartDetails item={item} />
 							<ItemQuantity
-								itemCount={props.itemCount}
-								setItemCount={props.setItemCount}
+								setSubSubTotal={setSubSubTotal}
+								subSubTotal={subSubTotal}
 								removeItem={props.removeItem}
 								setAddedProducts={props.setAddedProducts}
 								setCartItems={props.setCartItems}
@@ -28,6 +30,6 @@ const AddedToCart = (props) => {
 			})}
 		</div>
 	);
-}
+};
 
 export default AddedToCart;
