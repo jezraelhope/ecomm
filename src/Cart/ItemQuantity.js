@@ -1,22 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import Counter from "./Counter";
 
 import removeItem from "./utils/removeItem";
 
 const ItemQuantity = (props) => {
-	const [itemCount, setItemCount] = useState(1);
-	props.setSubSubTotal(itemCount * props.item.price);
+	const [itemTotal, setItemTotal] = useState(0);
 
 	return (
 		<div className="item-quantity">
 			<Counter
+				itemTotal={itemTotal}
+				setItemTotal={setItemTotal}
 				items={props.items}
 				item={props.item}
-				itemCount={itemCount}
-				setItemCount={setItemCount}
+				// itemCount={itemCount}
+				// setItemCount={setItemCount}
 				setAddedProducts={props.setAddedProducts}
 				setCartItems={props.setCartItems}
+				// Passing down the cartItems here
+				cartItems={props.cartItems}
 			/>
 			<button
 				className="remove-item"

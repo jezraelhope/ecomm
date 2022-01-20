@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import initialCartItems from "./utils/initialCartItems";
 import removeItem from "./utils/removeItem";
 
 const Counter = (props) => {
+	// Moved this from the parent because for some reason this was rerendering unlimited number of times as an infinite loop
+	// As we have moved the state here i just removed all the prop.itemCount and just keeping the itemCount
+	const [itemCount, setItemCount] = useState(1);
+
 	const handleChange = (e) => {
 		if (e.target.innerText === "+") {
-			props.setItemCount(props.itemCount + 1);
+			setItemCount(itemCount + 1);
 		} else if (e.target.innerText === "-") {
-			if (props.itemCount === 1) {
+			if (itemCount === 1) {
 				removeItem(
 					e,
 					props.items,
@@ -15,21 +19,33 @@ const Counter = (props) => {
 					props.setCartItems
 				);
 			} else {
-				props.setItemCount(props.itemCount - 1);
+				setItemCount(itemCount - 1);
 			}
 		}
 	};
+
+	// The only thing i added here is this, when the itemCount will change the useEffect will fire and update the cartItem's itemCount property
+	// I don't know if there is a better way to do this but I have to use map to loop over and then use setCartItem to the new value
+	useEffect(() => {
+		const newItem = props.cartItems.map((elem) => {
+			if (elem.id === props.item.id) {
+				elem.itemCount = itemCount;
+			}
+			return elem;
+		});
+		props.setCartItems(newItem);
+	}, [itemCount]);
 
 	return (
 		<div className="increment-decrement">
 			<button value={props.item.id} onClick={handleChange}>
 				-
 			</button>
-			<span>{props.itemCount}</span>
+			<span>{itemCount}</span>
 			<button
 				value={props.item.id}
 				onClick={handleChange}
-				disabled={props.item.inventory === props.itemCount}
+				disabled={props.item.inventory === itemCount}
 			>
 				+
 			</button>

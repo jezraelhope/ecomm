@@ -11,13 +11,11 @@ const Image = ({productId}) => {
 
 	return (
 		<div className="product-images">
-			{productImages.map(elem => {
-				return(
-					<img src={elem} alt="" />
-				)
+			{productImages.map((elem, i) => {
+				return <img src={elem} alt={elem} key={i} />;
 			})}
 		</div>
-	)
+	);
 }
 
 export default Image;
