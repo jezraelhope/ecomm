@@ -1,4 +1,5 @@
 .shopping-cart-container {
+	margin: 20em 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -71,4 +72,15 @@
 .proceed-to-checkout {
 	margin: 2em;
 	width: 20em;
+}
+
+.cart-empty {
+	width: auto;
+	border: 1px solid black;
+	padding: 2em;
+}
+
+.cart-empty-warning {
+	margin: 5em;
+	font-size: 1.5em;
 }

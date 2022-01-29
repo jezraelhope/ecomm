@@ -1,0 +1,101 @@
+.checkout-page-container {
+	border: 1px solid black;
+	width: 30em;
+	padding: 2em;
+}
+
+/*Purchased Items Container Component*/
+
+.purchased-items-container {
+	display: flex;
+	flex-direction: row;
+	padding: 1em;
+	margin-bottom: 1em;
+	border-bottom: 1px solid lightgrey;
+}
+
+.product-image-container {
+	width: 30%;
+
+}
+
+.product-image-container img{
+	width: 5em;
+	height: 5em;
+
+}
+
+.checkout-details-container {
+	padding-top: 1em;
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	font-size: 1em;
+	align-items: baseline;
+	line-height: 1.5em;
+}
+
+.product-price {
+	width: 20%;
+	padding-top: 1em;
+}
+
+/*Discount Code Component*/
+
+.discount-code-container {
+	display: flex;
+	flex-direction: row;
+	margin: .5em auto;
+	height: 1.5em;
+	padding: 2em 1em;
+	align-items: flex-end;
+	border-bottom: 1px solid lightgray;
+}
+
+.code-disclaimer-container {
+	margin-right: 2em;
+	width: 70%;
+}
+
+.discount-code-container .code-disclaimer-container p {
+	font-size: .8em;
+	margin: 0;
+    width: max-content;
+}
+
+.discount-code-container .code-disclaimer-container input {
+	width: 100%;
+	margin-top: .5em;
+}
+
+.apply-code {
+	height: 2em;
+}
+
+/*Calculations Container Component*/
+
+.calculations-container {
+	margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5em;
+    width: 70%;
+}
+
+.calculations-container .subtotal {
+	display: flex;
+	justify-content: space-between;
+}
+.calculations-container .taxes {
+	display: flex;
+	justify-content: space-between;
+}
+.calculations-container .shipping-fee {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid grey;
+}
+.calculations-container .total {
+	display: flex;
+	justify-content: space-between;
+}

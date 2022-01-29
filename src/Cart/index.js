@@ -5,37 +5,44 @@ import initialCartItems from "./utils/initialCartItems";
 import SubTotal from "./SubTotal";
 import AddedToCart from "./AddedToCart";
 
-import "./styles/cart.css";
+import { Link } from 'react-router-dom';
+
+import './styles/cart.css';
 
 const Cart = (props) => {
-	const items = props.addedProducts;
-	// Step: 1: Add another properties in cartItem itemCount which will store our count from counter
-	const [cartItems, setCartItems] = useState(initialCartItems(items));
+    const items = props.addedProducts;
+    const [cartItems, setCartItems] = useState(initialCartItems(items));
 
-	useEffect(() => {
-		setCartItems(cartItems);
-	});
+    useEffect(() => {
+        setCartItems(cartItems);
+    }, [cartItems]);
 
-	return cartItems.length ? (
-		<div className="shopping-cart-container">
-			<h1 className="shopping-cart">Shopping Cart</h1>
-			<AddedToCart
-				cartItems={cartItems}
-				setCartItems={setCartItems}
-				setAddedProducts={props.setAddedProducts}
-				items={items}
-			/>
-			<SubTotal cartItems={cartItems} setCartItems={setCartItems} />
-			<button className="proceed-to-checkout">Proceed to Checkout</button>
-		</div>
-	) : (
-		<div className="cartEmpty">
-			<div className="cartEmptyWarning">
-				There Are No Items In Your Cart
-			</div>
-			<a href="/">Return to Home</a>
-		</div>
-	);
+    props.setCart(cartItems);
+
+    return cartItems.length ? (
+        <div className="shopping-cart-container">
+            <h1 className="shopping-cart">Shopping Cart</h1>
+            <AddedToCart
+                cartItems={cartItems}
+                setCartItems={setCartItems}
+                setAddedProducts={props.setAddedProducts}
+                items={items}
+                itemTotal={props.itemTotal}
+                setItemTotal={props.setItemTotal}
+            />
+            <SubTotal cartItems={cartItems} setCartItems={setCartItems} />
+            <Link to="/checkout-page">
+                <button className="proceed-to-checkout">
+                    Proceed to Checkout
+                </button>
+            </Link>
+        </div>
+    ) : (
+        <div className="cart-empty">
+            <div className="cart-empty-warning">Your cart is empty</div>
+            <a href="/">Return to Home</a>
+        </div>
+    );
 };
 
 export default Cart;

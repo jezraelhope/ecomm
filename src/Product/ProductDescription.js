@@ -1,33 +1,36 @@
-import React, {useState} from 'react';
-import productDetails from '../Data/productDetails';
+import React from 'react';
+import products from '../Data/productDetails';
 
+const ProductDescription = ({ productId, setAddedProducts, addedProducts }) => {
+    const product = products.find((elem) => {
+        return elem.id === productId;
+    });
 
-const ProductDescription = ({productId, setAddedProducts, addedProducts}) => {
+    const addToCart = () => {
+        setAddedProducts([...addedProducts, product.id]);
+    };
 
-	const product = productDetails.find(elem => {
-		return elem.id === productId
-	})
+    return (
+        <div className="details-container">
+            <div className="main-product-details">
+                <span className="product-name">{product.name}</span>
+                <span className="product-price">${product.price}</span>
+                <span className="product-size">size: {product.size}</span>
+            </div>
+            <button
+                className="add-to-cart"
+                disabled={product.sold}
+                onClick={addToCart}
+            >
+                {product.sold ? 'Sold Out' : 'Add to Cart'}
+            </button>
+            <div className="secondary-product-details-container">
+                <div>Product Details: {product.description}</div>
+                <span>condition: {product.condition}</span>
+                <span>color: {product.color}</span>
+            </div>
+        </div>
+    );
+};
 
-	const addToCart = () => {
-		setAddedProducts([...addedProducts, product.id])
-	}
-
-	return (<div className="details-container">
-			<div className='main-product-details'>
-				<span className="product-name">{product.name}</span>
-				<span className="product-price">${product.price}</span>
-				<span className="product-size">size: {product.size}</span>
-			</div>
-			<button disabled={product.sold} className='add-to-cart' onClick={addToCart}>
-				{product.sold ? "Sold Out" : "Add to Cart"}
-			</button>
-			<div className='secondary-product-details-container'>
-				<div>Product Details: {product.description}</div>
-				<span>condition: {product.condition}</span>
-				<span>color: {product.color}</span>
-			</div>
-		</div>
-	)
-}
-
-export default ProductDescription
+export default ProductDescription;

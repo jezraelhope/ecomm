@@ -1,0 +1,19 @@
+.success-page-container {
+	padding: 2em;
+	width: 50%;
+	margin-top: -20em;
+}
+
+.checked-circle {
+	height: 7em;
+	margin: 1em;
+}
+
+.order-confirmed {
+	font-size: 3em;
+	font-weight: bold;
+}
+
+.shipping-reminder {
+	font-size: 1.1em;
+}
