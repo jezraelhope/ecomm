@@ -1,65 +1,129 @@
-
 .header {
-  margin: 3em;
   display: flex;
-  flex: 1 2 auto ;
-  width: 80%;
-  flex-wrap: wrap;
-  max-height: 10em;
-  position: absolute;
-  top: 0;
+  margin: 0 auto;
+  padding-top: .5em;
+  height: 10%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  width:90%;
+  position: fixed;
 }
 
-.header header {
-  font-family: 'Playfair Display', sans-serif;
-  font-size: 7em;
-  font-weight: bold;
-
-}
-
-.header .brand {
+  .header .brand {
   text-decoration: none;
   color: black;
   margin-left: 0;
   justify-content: flex-start;
   align-items: flex-start;
   width: 20%;
-}
+  font-size: 3em;
+  font-weight: bold;
 
+}
 
 
 .header .tabs {
+  display: none;
+}
+
+.header .icons {
   display: flex;
-  flex-direction: row;
-  font-size: 2em;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: flex-end;
-  width: 60%;
-  padding-left: 4em;
-  flex: 0 2 auto;
+  width: 20%;
 }
 
-.header .tabs .tab-name {
-  width: 5em;
-  text-decoration: none;
-  color: black;
+  .header .icons .shopping-cart {
+    display: block;
+  height: 1.5em;
+  width: 1.5em;
+  }
+
+.header .icons .shopping-cart-image {
+  display: block;
+  height: 1.5em;
+  width: 1.7em;
+
 }
 
-.header .shopping-cart {
-  display: flex;
-  flex-direction: row;
-  width: 10%;
-  align-items: center;
-  justify-content: flex-end;
+  .header .icons .hamburger {
+  display: block;
+  height: 1.5em;
+  width: 1.5em;
+  padding-top: 0.5em;
+  }
+
+  .header .icons .hamburger img {
+  height: 1em;
+  width: 1em;
 }
 
-.header .shopping-cart img {
-  width: 2em;
-  height: 2em;
-  padding-top: 1em;
-  justify-content: flex-end;
-}
 
-.cart-number {
-  padding-left: 1px;
+
+@media screen and (min-width: 768px) {
+
+    .header {
+    display: flex;
+    flex: 1 2 auto ;
+    align-items: center;
+    max-width: 80%;
+    height: 10em;
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+  }
+
+  .header .brand {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 5em;
+    font-weight: bold;
+    width: 30%;
+  }
+
+  .header .tabs {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    flex: 0 2 auto;
+  }
+
+  .header .tabs .tab-name {
+    padding: .3em;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+  }
+
+  .header .icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20%;
+    }
+
+  .header .icons .shopping-cart {
+    display: flex;
+    flex-direction: row;
+    width: 10%;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .header .icons .shopping-cart-image {
+    width: 1.5em;
+    height: 1.5em;
+    padding-top: 1.5em;
+  }
+
+  .cart-number {
+    padding-left: 1px;
+  }
+
+  .header .icons .hamburger {
+    display: none;
+  }
+
 }
