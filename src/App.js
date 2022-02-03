@@ -8,11 +8,10 @@ import {
 import './App.css';
 import Home from './Home'
 import Header from './Shared/Header';
-import FilterBar from './Home/FilterBar'
 import FilteredAppContent from './Home/AppContent';
 import Product from './Product';
 import Footer from './Shared/Footer/Footer';
-import Cart from './Cart'
+import Cart from './Cart';
 import Checkout from './Checkout/indexs';
 import SuccessPage from './SuccessPage';
 
@@ -26,7 +25,11 @@ function App() {
     return (
         <Router>
             <div className="App">
-                <Header setTabname={setTabname} tabName={tabName} />
+                <Header
+                    setTabname={setTabname}
+                    tabName={tabName}
+                    addedProducts={addedProducts}
+                />
                 <Routes>
                     <Route
                         path="/Cart"

@@ -5,9 +5,9 @@ footer {
 	gap: .5em;
 	position: absolute;
 	bottom: 0;
-	margin: 3em;
+	margin: 20em 3em 0 3em;
 	padding: 0 3em;
-	height: 2.5em;
+	height: 1em;
 	width: 100%;
 }
 

@@ -30,14 +30,20 @@ const FilteredAppContent = (props) => {
                                     src={item.image[0]}
                                     alt={item.id}
                                 />
-                                <div>{item.name}</div>
-                                <div>${item.price}</div>
+                                <div className="home-product-details">
+                                    <div className="home-product-name">
+                                        {item.name}
+                                    </div>
+                                    <div className="home-product-price">
+                                        ${item.price}
+                                    </div>
+                                </div>
                             </div>
                         </Link>
                     );
                 })
             ) : (
-                <div>
+                <div className="coming-soon">
                     <h1>Coming Soon</h1>
                     <a href="/">Return to Home</a>
                 </div>

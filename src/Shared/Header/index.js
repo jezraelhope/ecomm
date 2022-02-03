@@ -17,7 +17,7 @@ const Header = (props) => {
             <Brand filterItems={filterItems} />
             <Tabs filterItems={filterItems} />
             <div className="icons">
-                <ShoppingCartWidget />
+                <ShoppingCartWidget addedProducts={props.addedProducts} />
                 <Hamburger />
             </div>
         </div>

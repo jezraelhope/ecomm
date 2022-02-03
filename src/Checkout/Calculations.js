@@ -1,7 +1,10 @@
 import React from 'react';
 import { RoundOff } from '../Shared/utils/RoundOff';
+import { discountCodes } from './utils/discountCodes';
 
 const Calculations = (props) => {
+    const userCode = props.codeValidation;
+
     const subTotal = RoundOff(props.sumOfPrice);
     const taxes = RoundOff(subTotal * 0.1);
     const shipping = 4.99;
@@ -14,7 +17,7 @@ const Calculations = (props) => {
             </div>
             <div className="taxes">
                 <span>Taxes:</span>
-                <span>{`$${taxes}`}</span>
+                <span>{`$${taxes}0`}</span>
             </div>
             <div className="shipping-fee">
                 <span>Shipping:</span>

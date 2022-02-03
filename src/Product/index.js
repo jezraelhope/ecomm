@@ -1,7 +1,8 @@
-import './product.css';
 import React from 'react';
 import Image from './Image';
 import ProductDescription from './ProductDescription';
+
+import './styles/product.css';
 
 import { useParams } from 'react-router-dom';
 

@@ -7,9 +7,11 @@ const PlaceOrder = (props) => {
         props.setAddedProducts([]);
     };
     return (
-        <Link to="/Order-Confirmed">
-            <button onClick={handleChange}>Place Order</button>
-        </Link>
+        <div className="place-order">
+            <Link to="/Order-Confirmed">
+                <button onClick={handleChange}>Place Order</button>
+            </Link>
+        </div>
     );
 };
 

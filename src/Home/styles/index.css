@@ -26,14 +26,17 @@
 } */
 
 .app-content {
-  font-family: 'Hind Siliguri', sans-serif;
-  width: 80%;
+  font-family: 'Poppins', sans-serif;
+  width: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 2em;
   align-items: center;
+  text-align: center;
   justify-content: center;
-  margin: 5em 3em;
+  margin: 5em 3em 10em 3em;
+
 }
 
 .product-boxes {
@@ -45,8 +48,32 @@
 
 .product-photo {
   margin: 5px;
-  height: 400px;
-  width: 300px;
+  height: 200px;
+  width: 150px;
+}
+
+.home-product-details {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  gap: .5em;
+  padding: 1em 0;
+}
+
+.home-product-name {
+  font-size: 1em;
+}
+
+.home-product-price {
+  font-size: .8em;
+}
+
+.coming-soon {
+  margin: 12em 0;
+}
+
+.coming-soon a {
+  color:black ;
 }
 
 .product-link {
@@ -56,42 +83,16 @@
 	font-weight: bolder;
 }
 @media screen and (min-width: 768px) {
-  .filter-bar {
-    align-items: center;
-    position: relative;
-    padding: .6em;
-    font-family: 'Hind Siliguri', sans-serif;
-    width: 100%;
-    height: 30px;
-    border: 2px solid;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-  }
-
-  .filter-bar div {
-    width: 50%;
-  }
-
-  .filter-bar .sort {
-    text-align: left;
-    padding-left: 2em;
-  }
-
-  .filter-bar .filter {
-    text-align: right;
-    padding-right: 2em;
-  }
 
   .app-content {
-    font-family: 'Hind Siliguri', sans-serif;
-    width: 80%;
+    font-family: 'Poppins', sans-serif;
+    width: 70%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: 20em 3em ;
+    margin: 10em ;
   }
 
   .product-boxes {
@@ -105,6 +106,22 @@
     margin: 5px;
     height: 400px;
     width: 300px;
+  }
+
+  .home-product-details {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  gap: .5em;
+  padding: 1em 0;
+  }
+
+  .home-product-name {
+    font-size: 1em;
+  }
+
+  .home-product-price {
+    font-size: .8em;
   }
 
   .product-link {

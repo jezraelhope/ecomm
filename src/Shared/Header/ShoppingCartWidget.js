@@ -5,6 +5,8 @@ import { IconContext } from 'react-icons';
 import { Link } from 'react-router-dom';
 
 const ShoppingCartWidget = (props) => {
+    const cartSet = new Set(props.addedProducts);
+    const cartQty = cartSet.size;
     return (
         <div className="shopping-cart">
             <Link to="/Cart" className="link-to-cart">
@@ -13,7 +15,7 @@ const ShoppingCartWidget = (props) => {
                 >
                     <AiOutlineShoppingCart />
                 </IconContext.Provider>
-                <span className="cart-number">{props.cartNumber}</span>
+                <span className="cart-number">{cartQty}</span>
             </Link>
         </div>
     );

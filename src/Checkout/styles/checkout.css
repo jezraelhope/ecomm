@@ -1,7 +1,9 @@
 .checkout-page-container {
 	border: 1px solid black;
-	width: 30em;
+	width: auto;
 	padding: 2em;
+	margin: 10em 2em;
+	font-family: "Poppins", sans-serif;
 }
 
 /*Purchased Items Container Component*/
@@ -9,6 +11,7 @@
 .purchased-items-container {
 	display: flex;
 	flex-direction: row;
+	align-items: flex-start;
 	padding: 1em;
 	margin-bottom: 1em;
 	border-bottom: 1px solid lightgrey;
@@ -26,18 +29,21 @@
 }
 
 .checkout-details-container {
-	padding-top: 1em;
 	display: flex;
 	flex-direction: column;
 	width: 50%;
 	font-size: 1em;
-	align-items: baseline;
-	line-height: 1.5em;
+	gap: 1em;
 }
 
-.product-price {
+.name {
+	font-weight: bold;
+}
+
+.price {
 	width: 20%;
-	padding-top: 1em;
+	align-items: center;
+	padding-left: .5em;
 }
 
 /*Discount Code Component*/
@@ -57,7 +63,13 @@
 	width: 70%;
 }
 
-.discount-code-container .code-disclaimer-container p {
+.discount-code-container .discount-form {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+}
+
+.discount-code-container .code-disclaimer-container label {
 	font-size: .8em;
 	margin: 0;
     width: max-content;
@@ -68,17 +80,24 @@
 	margin-top: .5em;
 }
 
+.discount-code-container .code-disclaimer-container p {
+	font-size: .8em;
+	margin: 0;
+    width: max-content;
+}
+
 .apply-code {
-	height: 2em;
+	height: 1.5em;
+	font-size: 1em;
 }
 
 /*Calculations Container Component*/
 
 .calculations-container {
-	margin: 0 auto;
+	margin: 2em auto;
     display: flex;
     flex-direction: column;
-    line-height: 1.5em;
+    gap: .5em;
     width: 70%;
 }
 
@@ -98,4 +117,21 @@
 .calculations-container .total {
 	display: flex;
 	justify-content: space-between;
+}
+
+.place-order {
+	text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+	.checkout-page-container {
+		border: 1px solid black;
+		width: auto;
+		padding: 2em;
+		margin: 12em 0;
+	}
+
+	.checkout-details-container {
+		gap: 1.5em;
+	}
 }
