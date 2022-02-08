@@ -51,10 +51,10 @@
 .discount-code-container {
 	display: flex;
 	flex-direction: row;
-	margin: .5em auto;
+	margin: 0 auto;
 	height: 1.5em;
-	padding: 2em 1em;
-	align-items: flex-end;
+	padding: 3em 1em;
+	align-items: center;
 	border-bottom: 1px solid lightgray;
 }
 

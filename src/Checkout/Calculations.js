@@ -3,9 +3,20 @@ import { RoundOff } from '../Shared/utils/RoundOff';
 import { discountCodes } from './utils/discountCodes';
 
 const Calculations = (props) => {
-    const userCode = props.codeValidation;
+    const discountCode = props.codeValidation;
+    const purchasedTotal = props.sumOfPrice;
 
-    const subTotal = RoundOff(props.sumOfPrice);
+    const rate = discountCodes.find((item) => {
+        return discountCode === item.code;
+    });
+
+    let subTotal;
+
+    if (rate?.discount > 0) {
+        subTotal = RoundOff(purchasedTotal * rate?.discount);
+    } else {
+        subTotal = RoundOff(purchasedTotal);
+    }
     const taxes = RoundOff(subTotal * 0.1);
     const shipping = 4.99;
     const total = RoundOff(subTotal + taxes + shipping);
@@ -17,7 +28,7 @@ const Calculations = (props) => {
             </div>
             <div className="taxes">
                 <span>Taxes:</span>
-                <span>{`$${taxes}0`}</span>
+                <span>{`$${taxes}`}</span>
             </div>
             <div className="shipping-fee">
                 <span>Shipping:</span>

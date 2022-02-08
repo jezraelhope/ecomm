@@ -5,6 +5,7 @@ import PurchasedItems from './PurchasedItems';
 import PlaceOrder from './PlaceOrder';
 import './styles/checkout.css';
 
+
 const Checkout = (props) => {
     const [codeValidation, setCodeValidation] = useState('');
 

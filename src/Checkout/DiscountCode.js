@@ -3,7 +3,7 @@ import { discountCodes } from './utils/discountCodes';
 
 const DiscountCode = (props) => {
     const [inputCode, setInputCode] = useState('');
-    const [codeConfirmation, setCodeConfirmation] = useState('placeholder');
+    const [codeConfirmation, setCodeConfirmation] = useState(' ');
 
     const handleChange = () => {
         props.setCodeValidation(inputCode);

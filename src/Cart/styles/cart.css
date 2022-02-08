@@ -95,48 +95,19 @@
 @media screen and (min-width: 768px) {
 	.shopping-cart-container {
 		margin: 10em 0;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
 		width: 80%;
 	}
 
 	.items-container {
-		display: flex;
-		flex-direction: column;
 		justify-content: center;
 		margin: 0 auto;
-		width: auto;
-	}
-
-	.added-items {
-		display: flex;
-		flex-direction: row;
-		margin: 1em;
-		padding: 1em;
-	}
-
-	.added-items img {
-		width: 10em;
-		height: 10em;
 	}
 
 	.purchased-details {
-		display: flex;
-		flex-direction: column;
 		justify-content: left ;
 		line-height: 1.5em;
-		margin: 0 auto;
 		padding-left: 2em;
 	}
-
-	.added-to-cart-details {
-		display: flex;
-		flex-direction: column;
-		align-items: start;
-		justify-content: flex-start;
-	}
-
 
 	.item-quantity {
 		display: flex;
@@ -145,25 +116,7 @@
 	}
 
 	.item-quantity .increment-decrement {
-		display: flex;
-		flex-direction: row;
-		margin-top: .5em;
 		justify-content: space-evenly;
-	}
-
-	.item-quantity .remove-item {
-		color: red;
-		margin: 1em 1em 1em 0;
-	}
-
-	.item-quantity .remove-item .trashcan {
-		width: 2em;
-		height: 2em;
-	}
-
-	.proceed-to-checkout {
-		margin: 2em;
-		width: 20em;
 	}
 
 	.cart-empty {
