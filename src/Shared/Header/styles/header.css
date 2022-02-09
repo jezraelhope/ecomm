@@ -23,8 +23,35 @@
 }
 
 
-.tabs {
+.header .tabs {
   display: none;
+}
+
+.header .tabs-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 30%;
+    height: 100vh;
+    background-color: white;
+    padding: 1em 3em 1em 1em;
+    gap: 2em;
+}
+
+.close-button {
+  height: 1.5em;
+  width: 1.5em;
+  padding-top: .5em;
+}
+
+.tab-name {
+  text-decoration: none;
+  font-size: 2em;
+  color: black;
 }
 
 .header .icons {
@@ -73,13 +100,13 @@
 
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
 
     .header {
     display: flex;
     flex: 1 2 auto ;
     align-items: center;
-    width: 90%;
+    width: 70%;
     height: 10em;
     position: fixed;
     top: 0;
@@ -100,13 +127,19 @@
     align-items: center;
     width: 50%;
     flex: 0 2 auto;
+    text-decoration: none;
+  }
+
+  .header .tabs .close-button {
+    display: none;
   }
 
   .header .tabs .tab-name {
     padding: .3em;
     text-decoration: none;
     color: black;
-    font-size: 1.5em;
+    font-size: 2em;
+    font-size-adjust: 0.3;
   }
 
   .header .icons {
@@ -114,7 +147,7 @@
     justify-content: space-evenly;
     align-items: center;
     width: 20%;
-    padding-top: 1em;
+    padding: 1em;
     }
 
   .header .icons .shopping-cart {

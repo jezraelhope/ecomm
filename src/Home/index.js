@@ -4,9 +4,9 @@ import AppContent from './AppContent'
 
 function Home() {
   return (
-    <div className="App">
-      <AppContent />
-    </div>
+      <div className="Home">
+          <AppContent />
+      </div>
   );
 }
 

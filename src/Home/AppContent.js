@@ -2,6 +2,8 @@ import React from 'react';
 import { filterData } from '../Shared/utils/FilterData';
 import products from '../Data/productDetails';
 
+import './styles/home.css';
+
 import { Link } from 'react-router-dom';
 
 const FilteredAppContent = (props) => {

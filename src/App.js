@@ -6,7 +6,6 @@ import {
 } from "react-router-dom";
 
 import './App.css';
-import Home from './Home'
 import Header from './Shared/Header';
 import FilteredAppContent from './Home/AppContent';
 import Product from './Product';
