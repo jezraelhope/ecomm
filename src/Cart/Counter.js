@@ -31,7 +31,7 @@ const Counter = (props) => {
             return elem;
         });
         props.setCartItems(newItem);
-    }, [itemCount]);
+    });
 
     return (
         <div className="increment-decrement">
