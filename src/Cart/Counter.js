@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import initialCartItems from "./utils/initialCartItems";
 import removeItem from "./utils/removeItem";
 
 const Counter = (props) => {
