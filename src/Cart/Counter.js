@@ -21,17 +21,17 @@ const Counter = (props) => {
         }
     };
 
-    // The only thing i added here is this, when the itemCount will change the useEffect will fire and update the cartItem's itemCount property
+    // The only thing added here is this, when the itemCount will change the useEffect will fire and update the cartItem's itemCount property
     // I don't know if there is a better way to do this but I have to use map to loop over and then use setCartItem to the new value
-    useEffect(() => {
-        const newItem = props.cartItems.map((elem) => {
-            if (elem.id === props.item.id) {
-                elem.itemCount = itemCount;
-            }
-            return elem;
-        });
-        // props.setCartItems(newItem);
-    });
+//     useEffect(() => {
+//         const newItem = props.cartItems.map((elem) => {
+//             if (elem.id === props.item.id) {
+//                 elem.itemCount = itemCount;
+//             }
+//             return elem;
+//         });
+//         // props.setCartItems(newItem);
+//     });
 
     return (
         <div className="increment-decrement">
