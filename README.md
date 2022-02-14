@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/381d064e-f573-4b8e-8422-7fd242bd4bb8/deploy-status)](https://app.netlify.com/sites/jhope/deploys)
+
 # NZM - An Online Store for Used Apparel
 
 ## Description
