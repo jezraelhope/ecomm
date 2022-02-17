@@ -32,7 +32,7 @@ This project was created in hopes to increase my knowledge of the React library 
 	- Success Page (Order Confirmed)
 
 ## Additional Features in the Future
-- Improved Home Page with a Main Banner of a larger image or gif
+- Improved Home Page with a Main Banner of a larger image
 - Pop-up message when an item is added to cart
 - Tax rates per zipcode
 - randomized order number
@@ -43,5 +43,5 @@ This project was created in hopes to increase my knowledge of the React library 
 - Project Organization and decomposition of larger components into sizeable and specific chunks
 - Efficiently passing down data from parent to child, child to parent and to sibling components
 - Changing styles of elements from different components on click
-- increase CSS and media queries knowledge
+- increased CSS and media queries knowledge
 - As a lousy reader who would only glance through articles to pick up little details, I've also learned how to thoroughly read documentations of public libraries and APIs.
