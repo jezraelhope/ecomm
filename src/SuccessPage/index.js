@@ -15,8 +15,7 @@ const SuccessPage = () => {
             />
             <div className="order-confirmed">Your Order is Confirmed!</div>
             <p className="shipping-reminder">
-                We'll send you a shipping confirmation email as soon as your
-                order ships.
+                We'll send you an email as soon as your order ships.
             </p>
             <Link to="/">
                 <button className="return-to-home">Continue Shopping</button>

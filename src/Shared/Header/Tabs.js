@@ -13,21 +13,23 @@ const Tabs = (props) => {
                 className="close-button"
                 onClick={changeClassName}
             />
-            <Link to="/" onClick={props.filterItems} className="tab-name">
-                <span id="dresses">dresses</span>
-            </Link>
-            <Link to="/" onClick={props.filterItems} className="tab-name">
-                <span id="tops">tops</span>
-            </Link>
-            <Link to="/" onClick={props.filterItems} className="tab-name">
-                <span id="bottoms">bottoms</span>
-            </Link>
-            <Link to="/" onClick={props.filterItems} className="tab-name">
-                <span id="shoes">shoes</span>
-            </Link>
-            <Link to="/" onClick={props.filterItems} className="tab-name">
-                <span id="bags">bags</span>
-            </Link>
+            <div className="tab-categories">
+                <Link to="/" onClick={props.filterItems} className="tab-name">
+                    <span id="dresses">dresses</span>
+                </Link>
+                <Link to="/" onClick={props.filterItems} className="tab-name">
+                    <span id="tops">tops</span>
+                </Link>
+                <Link to="/" onClick={props.filterItems} className="tab-name">
+                    <span id="bottoms">bottoms</span>
+                </Link>
+                <Link to="/" onClick={props.filterItems} className="tab-name">
+                    <span id="shoes">shoes</span>
+                </Link>
+                <Link to="/" onClick={props.filterItems} className="tab-name">
+                    <span id="bags">bags</span>
+                </Link>
+            </div>
         </div>
     );
 };

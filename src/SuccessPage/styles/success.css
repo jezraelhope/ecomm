@@ -1,5 +1,6 @@
 .success-page-container {
-	padding: 2em;
+	display: flex;
+	flex-direction: column;
 	width: 50%;
 	margin: 10em 0;
 	padding: 5em;
@@ -8,14 +9,15 @@
 	font-family: "Poppins", sans-serif;
 }
 
-.checked-circle {
-	height: 7em;
-	margin: 1em;
+.order-confirmed {
+	font-weight: bold;
+	font-size: 2em;
 }
 
-.order-confirmed {
-	font-size: 3em;
-	font-weight: bold;
+.checked-circle {
+	height: 7em;
+	width: fit-content;
+	margin: 2em auto;
 }
 
 .shipping-reminder {
@@ -29,6 +31,11 @@
 		margin: 15em 0;
 		padding: 5em;
 		gap: 1.5em;
+	}
+
+	.order-confirmed {
+		font-size: 3em;
+		font-weight: bold;
 	}
 
 	.checked-circle {
