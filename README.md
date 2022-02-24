@@ -35,6 +35,7 @@ This project was created in hopes to increase my knowledge of the React library 
 ## Additional Features in the Future
 - Improved Home Page with a Main Banner of a larger image
 - Pop-up message when an item is added to cart
+- Ability to zoom out images
 - Tax rates per zipcode
 - randomized order number
 - more robust and eye pleasing design
