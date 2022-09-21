@@ -9,7 +9,7 @@
 A simple e-commerce project with basic functionalities such as ability to view product, add items to cart, checkout selected items and an order confirmed page for successful purchase. React Router was used to add navigation to header tabs.
 	
 	
-This project was created in hopes to increase my knowledge of the React library and increase confidence in coding. While I have managed to achieve this goal, the project in my opinion is still not there yet as a presentable application but as I create other projects, I am hoping to gain more experience to be able to improve this one.
+This project was created in the hopes of increasing my knowledge of the React library and increasing confidence in coding. While I have managed to achieve this goal, the project, in my opinion is not there yet as a presentable application but as I create other projects, I am hoping to gain more experience to be able to improve this one.
 
 ## Technologies Used
 - CSS
