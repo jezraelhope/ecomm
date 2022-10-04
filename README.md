@@ -5,8 +5,6 @@
 
 # NZM - An Online Store for Used Apparel
 
-Visit the website: <a href="nzm.netlify.app">nzm.netlify.app</a>
-
 ## Description
 A simple e-commerce project with basic functionalities such as ability to view product, add items to cart, checkout selected items and an order confirmed page for successful purchase. React Router was used to add navigation to header tabs.
 	
