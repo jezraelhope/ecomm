@@ -1,7 +1,8 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/381d064e-f573-4b8e-8422-7fd242bd4bb8/deploy-status)](https://app.netlify.com/sites/nzm/deploys)
 
 
-View here: [![WEBSITE](https://img.shields.io/badge/WEBSITE-LINK-blue)](https://nzm.netlify.app/)
+View here:</br >
+[![WEBSITE](https://img.shields.io/badge/WEBSITE-LINK-blue)](https://nzm.netlify.app/)
 
 # NZM - An Online Store for Used Apparel
 
