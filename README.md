@@ -16,6 +16,7 @@ This project was created in the hopes of increasing my knowledge of the React li
 - CSS
 - JavaScript
 - React
+- React Router
 ## Expected Features
 - Responsiveness
 - Routing
