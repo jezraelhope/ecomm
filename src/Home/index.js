@@ -1,11 +1,11 @@
 import React from 'react';
 
-import AppContent from './AppContent'
+import FilteredAppContent from './AppContent'
 
 function Home() {
   return (
       <div className="Home">
-          <AppContent />
+          <FilteredAppContent />
       </div>
   );
 }
