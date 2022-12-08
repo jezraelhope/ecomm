@@ -37,7 +37,7 @@ const Footer = () => {
 			</div>
 			<div className='website-info'>
 				<p>
-				NZM is a short form of Nozomi which is a bullet train from Tokyo to Kyoto, the website designer and creator’s favorite trip. It also means "hope" in english. Which is what her friends call her and her preferred name.
+				NZM is a short form of Nozomi which is a bullet train from Tokyo to Kyoto, the website designer and creator’s favorite trip. It also means "hope" in english, which is what her friends call her and her preferred name.
 				</p>
 				<p className='footer-footer'>website created by Jezrael Hope Magat</p>
 			</div>
