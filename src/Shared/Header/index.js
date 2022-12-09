@@ -15,16 +15,18 @@ const Header = (props) => {
     };
 
     return (
-        <div className="header">
-            <Brand filterItems={filterItems} />
-            <Tabs
-                filterItems={filterItems}
-                tabStyle={tabStyle}
-                setTabStyle={setTabStyle}
-            />
-            <div className="icons">
-                <ShoppingCartWidget addedProducts={props.addedProducts} />
-                <Hamburger setTabStyle={setTabStyle} />
+        <div className="header-container">
+            <div className='header'>
+                <Brand filterItems={filterItems} />
+                <Tabs
+                    filterItems={filterItems}
+                    tabStyle={tabStyle}
+                    setTabStyle={setTabStyle}
+                />
+                <div className="icons">
+                    <ShoppingCartWidget addedProducts={props.addedProducts} />
+                    <Hamburger setTabStyle={setTabStyle} />
+                </div>
             </div>
         </div>
     );
