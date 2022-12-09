@@ -47,7 +47,7 @@ const FilteredAppContent = (props) => {
             ) : (
                 <div className="coming-soon">
                     <h1>Coming Soon</h1>
-                    <a href="/">Return to Home</a>
+                    <a href="/products">Return to Product Page</a>
                 </div>
             )}
         </div>

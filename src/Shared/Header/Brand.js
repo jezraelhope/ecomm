@@ -6,7 +6,7 @@ import {
 
 const Brand = (props) => {
 	return (
-        <Link to="/" className="brand">
+        <Link to="/products" className="brand">
             <header onClick={props.filterItems}>NZM</header>
         </Link>
     );

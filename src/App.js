@@ -7,6 +7,7 @@ import {
 
 import './App.css';
 import Header from './Shared/Header';
+import MainPage from './MainPage';
 import FilteredAppContent from './Home/AppContent';
 import Product from './Product';
 import Footer from './Shared/Footer/Footer';
@@ -31,6 +32,12 @@ function App() {
                 />
                 <Routes>
                     <Route
+                        path="/"
+                        element={<MainPage/>}
+                    >
+
+                    </Route>
+                    <Route
                         path="/Cart"
                         element={
                             <Cart
@@ -44,7 +51,7 @@ function App() {
                         }
                     ></Route>
                     <Route
-                        path="/"
+                        path="/products"
                         element={<FilteredAppContent filterBy={tabName} />}
                     />
                     <Route

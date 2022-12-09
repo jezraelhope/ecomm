@@ -40,7 +40,7 @@ const Cart = (props) => {
     ) : (
         <div className="cart-empty">
             <div className="cart-empty-warning">Your cart is empty</div>
-            <a href="/">Return to Home</a>
+            <a href="/products">Return to Product Page</a>
         </div>
     );
 };
