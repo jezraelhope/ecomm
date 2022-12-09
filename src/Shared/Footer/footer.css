@@ -24,13 +24,13 @@
 	text-align: center;
 }
 
-.contact-details {
-	line-height: .5rem;
-}
-
 .footer-header {
 	font-size: 1.2rem;
 	margin-bottom: 1rem;
+}
+
+.contact-details {
+	line-height: .5rem;
 }
 
 .quick-links {
@@ -66,4 +66,30 @@
 
 .footer-footer {
 	margin-top: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+	.footer-content {
+		display: flex;
+		flex-direction: row;
+		width: 60%;
+	}
+
+	.footer-header {
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
+	}
+
+	.contact-container {
+		text-align: left;
+	}
+
+	.acknowledgement {
+		display: block;
+		color: #fff;
+	}
+
+	.acknowledgement a{
+		color: #fff;
+	}
 }
