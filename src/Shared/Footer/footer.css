@@ -7,7 +7,7 @@
 	/* gap: .5em;
 	position: absolute;
 	bottom: 0; */
-	margin: 20em 3em 0 3em;
+	margin-top: 20em;
 	width: 100%;
 }
 
@@ -19,7 +19,7 @@
 	margin: 1rem;
 }
 
-.footer-content > div {
+.divz {
 	margin-bottom: 2rem;
 	text-align: center;
 }
@@ -77,7 +77,7 @@
 
 	.footer-header {
 		font-size: 1.5rem;
-		margin-bottom: 1rem;
+		margin-bottom: 2rem;
 	}
 
 	.contact-container {

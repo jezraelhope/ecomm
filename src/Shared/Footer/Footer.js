@@ -5,7 +5,7 @@ import './footer.css'
 const Footer = () => {
 	return (
 		<footer className="footer">
-			<div className='footer-content'>
+			<div className='footer-content divz'>
 				<div className='contact-container'>
 					<p className='footer-header'>Contact</p>
 					<div className='contact-details'>
@@ -16,7 +16,7 @@ const Footer = () => {
 						<p>60100</p>
 				</div>
 				</div>
-				<div className='quick-links'>
+				<div className='quick-links divz'>
 					<p className='footer-header'>Quick Links</p>
 					<div className='footer-links'>
 						<a href='#'>FAQs</a>
@@ -27,7 +27,7 @@ const Footer = () => {
 						<a href='#'>Our Products</a>
 					</div>
 				</div>
-				<div className='acknowledgement'>
+				<div className='acknowledgement divz'>
 					<p className='footer-header'>Acknowledgement</p>
 					<div>
 						<p>Hero video by:</p>
