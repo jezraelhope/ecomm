@@ -25,10 +25,10 @@ const ProductDescription = ({ productId, setAddedProducts, addedProducts }) => {
                 {product.sold ? 'Sold Out' : 'Add to Cart'}
             </button>
             <div className="secondary-product-details-container">
-                <strong>Product Details: </strong>
+                <p className='product-deetz'>Product Details: </p>
                 <span> {product.description}</span>
-                <strong>Condition: </strong> <span> {product.condition}</span>
-                <strong>Color: </strong> <span>{product.color}</span>
+                <p className='product-deetz'>Condition: </p> <span> {product.condition}</span>
+                <p className='product-deetz'>Color: </p> <span>{product.color}</span>
             </div>
         </div>
     );

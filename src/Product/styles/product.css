@@ -43,6 +43,7 @@
 	font-size: 1.5em;
 }
 
+
 .add-to-cart {
 	font-size: 1.2em;
 	text-align: center;
@@ -57,7 +58,15 @@
 .secondary-product-details-container {
 	display: flex;
 	flex-direction: column;
-	gap: .5em;
+	line-height: .8;
+}
+
+.product-deetz {
+	font-size: 1.2rem;
+}
+
+.secondary-product-details-container span {
+	font-weight: 300;
 }
 
 @media screen and (min-width: 1024px) {
