@@ -17,6 +17,7 @@ const products = [
         price: 16.99,
         image: [shoes1, shoes2],
         id: '1',
+        favorite: false,
         description: 'Delicate square toe heels. In good condition.',
         size: '7 (US)',
         condition: 'good',
@@ -30,6 +31,7 @@ const products = [
         price: 12.99,
         image: [ccblouse],
         id: '2',
+        favorite: true,
         description:
             'Vintage blouse with ornate lace colar. Buttons are concealed.',
         size: 'Large',
@@ -44,6 +46,7 @@ const products = [
         price: 9.99,
         image: [cardigan],
         id: '3',
+        favorite: false,
         description:
             '100% Silk short sleeve cardigan. Perfect in spring for fall.',
         size: 'Large',
@@ -58,6 +61,7 @@ const products = [
         price: 14.99,
         image: [satin1, satin2],
         id: '4',
+        favorite: true,
         description: 'Beautiful Satin Blouse.',
         size: 'Large',
         condition: 'good',
@@ -71,6 +75,7 @@ const products = [
         price: 13.99,
         image: [silkpajama1, silkpajama2],
         id: '5',
+        favorite: true,
         description: '100% Silk Pajama. Comes with shorts',
         size: 'Medium',
         condition: 'fair',
@@ -84,6 +89,7 @@ const products = [
         price: 17.99,
         image: [rlldress1, rlldress2, rlldress3],
         id: '6',
+        favorite: false,
         description:
             'Soft and flowy maxi dress. Outer layer is 100% silk. Lining is polyester.',
         size: 'Large',
