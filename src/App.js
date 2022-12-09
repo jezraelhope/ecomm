@@ -21,9 +21,20 @@ function App() {
     const [tabName, setTabname] = useState('');
     const [cart, setCart] = useState([]);
     const [itemTotal, setItemTotal] = useState(0);
-
     return (
-        <Router>
+        window.location.pathname === "/" ? (
+            <Router>
+                <Routes>
+                    <Route
+                            path="/"
+                            element={<MainPage />}
+                        >
+                    </Route>
+                </Routes>
+            </Router>
+            
+        ):
+        (<Router>
             <div className="App">
                 <Header
                     setTabname={setTabname}
@@ -31,12 +42,6 @@ function App() {
                     addedProducts={addedProducts}
                 />
                 <Routes>
-                    <Route
-                        path="/"
-                        element={<MainPage/>}
-                    >
-
-                    </Route>
                     <Route
                         path="/Cart"
                         element={
@@ -78,7 +83,7 @@ function App() {
                 </Routes>
                 <Footer />
             </div>
-        </Router>
+        </Router>)
     );
 }
 
