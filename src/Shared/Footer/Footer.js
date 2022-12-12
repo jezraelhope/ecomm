@@ -20,8 +20,8 @@ const Footer = () => {
 					<p className='footer-header'>Quick Links</p>
 					<div className='footer-links'>
 						<a href='#'>FAQs</a>
-						<a href='#'>Privacy Policy</a>
-						<a href='#'>Terms and Conditions</a>
+						<a href='https://www.privacypolicygenerator.info/live.php?token=oJoRuGqZZDYntGQ7MJuZXspZ26Nfp2Zf'>Privacy Policy</a>
+						{/* <a href='https://www.termsandconditionsgenerator.com/live.php?token=kvYXMbbqMwSsj7GIkYR3PEhFBmar94Yk'>Terms and Conditions</a> */}
 						<a href='#'>About Us</a>
 						<a href='#'>Sustainability Mission</a>
 						<a href='#'>Our Products</a>
