@@ -61,7 +61,7 @@ function App() {
                         element={<FilteredAppContent filterBy={tabName} />}
                     />
                     <Route
-                        path=":type/:topicId"
+                        path="/products/:type/:topicId"
                         element={
                             <Product
                                 setAddedProducts={setAddedProducts}

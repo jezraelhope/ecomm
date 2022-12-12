@@ -1,16 +1,19 @@
 .product-container {
+	position: relative;
+	z-index: -1;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	width: 90%;
-	margin: 5em 3em 10em 3em;
+	margin: 7em 3em;
 	font-family: "Poppins", sans-serif;
 }
 
 .product-images {
 	display: flex;
 	flex-direction: column;
-	width: 90%;
+	max-width: 280px;
+	margin-bottom: 2rem;
 }
 
 .product-images img {
@@ -58,7 +61,7 @@
 .secondary-product-details-container {
 	display: flex;
 	flex-direction: column;
-	line-height: .8;
+	line-height: 1.2;
 }
 
 .product-deetz {
