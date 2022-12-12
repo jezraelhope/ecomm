@@ -1,0 +1,14 @@
+.fake-links {
+    position: relative;
+    width: 60%;
+    margin: 15rem auto;
+    display: flex;
+    flex-direction: column;
+    font-size: min(4vw, 25px);
+    line-height: 1.2;
+    z-index: -1;
+}
+
+.question {
+    text-decoration: underline;
+}

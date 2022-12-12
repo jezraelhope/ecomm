@@ -115,6 +115,7 @@
     width: 100%;
     text-align: center;
     margin: 0 auto;
+    font-size: min(4vw, 20px);
 }
 
 .favorite-image {
@@ -204,7 +205,6 @@
     .favorite-desktop {
         display: flex;
         flex-direction: row;
-        margin-bottom: 
     }
     .favorite-desktop .slider-image-container {
         height: 34vw;

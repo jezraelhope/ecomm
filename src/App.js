@@ -14,6 +14,7 @@ import Footer from './Shared/Footer/Footer';
 import Cart from './Cart';
 import Checkout from './Checkout/indexs';
 import SuccessPage from './SuccessPage';
+import FakeLinks from './Shared/FakeLinks/FakeLinks';
 
 function App() {
     //data
@@ -80,6 +81,7 @@ function App() {
                         }
                     />
                     <Route path="/Order-Confirmed" element={<SuccessPage />} />
+                    <Route path='/info' element={<FakeLinks />}/>
                 </Routes>
                 <Footer />
             </div>

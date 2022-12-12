@@ -1,5 +1,7 @@
 import React from 'react';
-import './footer.css'
+import './footer.css';
+
+import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -19,12 +21,11 @@ const Footer = () => {
 				<div className='quick-links divz'>
 					<p className='footer-header'>Quick Links</p>
 					<div className='footer-links'>
-						<a href='#'>FAQs</a>
 						<a href='https://www.privacypolicygenerator.info/live.php?token=oJoRuGqZZDYntGQ7MJuZXspZ26Nfp2Zf'>Privacy Policy</a>
 						{/* <a href='https://www.termsandconditionsgenerator.com/live.php?token=kvYXMbbqMwSsj7GIkYR3PEhFBmar94Yk'>Terms and Conditions</a> */}
-						<a href='#'>About Us</a>
-						<a href='#'>Sustainability Mission</a>
-						<a href='#'>Our Products</a>
+						<a href='/info/#about-us'>About Us</a>
+						<a href='/info/#sustainability-mission'>Sustainability Mission</a>
+						<a href='/info/#FAQs'>FAQs</a>
 					</div>
 				</div>
 				<div className='acknowledgement divz'>

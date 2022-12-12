@@ -26,7 +26,6 @@
 .footer-header {
 	font-size: min(5vw, 20px);
 	margin-bottom: 1rem;
-	color: #1A244E;
 }
 
 .contact-details {
@@ -77,6 +76,7 @@
 
 	.footer-header {
 		font-size: 1.5rem;
+		font-weight: 600;
 		margin-bottom: 2rem;
 	}
 

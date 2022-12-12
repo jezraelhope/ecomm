@@ -10,6 +10,7 @@
   text-align: center;
   justify-content: center;
   margin: 5em 3em 10em 3em;
+  color: #1A244E;
 
 }
 
@@ -52,7 +53,7 @@
 
 .product-link {
 	/* width: 33.3%; */
-	color: black;
+	color: #1A244E;
 	text-decoration: none;
 	font-weight: bolder;
 }

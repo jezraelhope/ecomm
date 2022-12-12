@@ -7,7 +7,9 @@ import {
 const Brand = (props) => {
 	return (
         <Link to="/products" className="brand">
-            <header onClick={props.filterItems}>NZM</header>
+            <header onClick={props.filterItems}>
+              <h1>NZM</h1>
+            </header>
         </Link>
     );
 }
