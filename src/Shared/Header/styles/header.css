@@ -119,11 +119,11 @@
 
 @media screen and (min-width: 1024px) {
 
-    .header-container {
-      height: 10rem;
-    }
+  .header-container {
+    height: 10rem;
+  }
 
-    .header {
+  .header {
     display: flex;
     flex: 1 2 auto ;
     align-items: center;
@@ -133,7 +133,6 @@
   }
 
   .header .brand {
-    font-family: 'Playfair Display', sans-serif;
     font-size: 5em;
     font-weight: bold;
     width: 30%;
@@ -153,19 +152,19 @@
     display: none;
   }
 
-.header .tab-categories {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  gap: 2em;
-}
+  .header .tab-categories {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 2em;
+  }
 
   .header .tabs .tab-name {
-    padding: .3em;
+
     text-decoration: none;
     color: black;
-    font-size: 2em;
-    font-size-adjust: 0.3;
+    font-size: 2.3vw;
+    flex: 1 0 auto;
   }
 
   .header .icons {
