@@ -14,7 +14,7 @@ const Favorites = () => {
         return (
             <div className="each-fade favorites">
                 <div className="slider-image-container">
-                <img src={product.image[0]} className=""/>
+                <img src={product.image[0]} className="favorites-image"/>
                 </div>
                 <p>{product.name}</p>
                 <p>{product.price}</p>

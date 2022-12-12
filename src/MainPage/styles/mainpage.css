@@ -118,10 +118,6 @@
     font-size: min(4vw, 20px);
 }
 
-.favorite-image {
-    max-width: 70%;
-    height: 200px
-}
 
 .slider-image-container {
     width: 50%;
