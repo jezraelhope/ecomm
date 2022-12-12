@@ -17,7 +17,7 @@ const SuccessPage = () => {
             <p className="shipping-reminder">
                 We'll send you an email as soon as your order ships.
             </p>
-            <Link to="/">
+            <Link to="/products">
                 <button className="return-to-home">Continue Shopping</button>
             </Link>
         </div>
