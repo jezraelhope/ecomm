@@ -31,12 +31,14 @@ const MainPage = () => {
                 <h1>NZM</h1>
             </div>
             <div className="about" id="about">
-                <p>
-                We are on a mission to provide sustainable and beautiful clothing for everyone who cares about the environment.
-                </p>
-                <p>
-                Our items have been carefully curated, with the emphasis on elegant and timeless pieces that will stay in your collection for ages to come and/or can be passed down to the next generation.
-                </p>
+                <div className="about-content">
+                    <p>
+                    We are on a mission to provide sustainable and beautiful clothing for everyone who cares about the environment.
+                    </p>
+                    <p>
+                    Our items have been carefully curated, with the emphasis on elegant and timeless pieces that will stay in your collection for ages to come and/or can be passed down to the next generation.
+                    </p>
+                </div>
             </div>
             <div className="feature-container">
             <div className="texts">

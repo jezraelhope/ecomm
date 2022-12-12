@@ -34,6 +34,7 @@
     line-height: 1.4;
     background-color: #525998;
     color: rgba(255, 255, 255, .8);
+    font-size: min(5vw, 25px);
 }
 
 .feature-container {
@@ -65,11 +66,11 @@
 }
 
 .texts p:first-child {
-    font-size: 1.2rem;
+    font-size: min(6vw, 30px);
 }
 
 .texts p {
-    font-size: .8rem;
+    font-size: min(3vw, 18px);
 }
 
 .texts p > a {
@@ -90,14 +91,16 @@
     text-align:center;
     color: #1A244E;
     margin-top: 0;
+    font-size: min(5vw, 25px);
 }
 
 .favorites-container {
     text-align: center;
     padding: 4rem 2rem;
+    margin: 1rem 0 5rem;
 }
 .slide-container {
-    margin: 2rem 0;
+    margin: 5rem 0 4rem;
     color: #1A244E;
 }
 
@@ -168,7 +171,7 @@
     /* Feature CSS */
     .feature-container {
         display: flex;
-    
+        height: 100vh;
     }
     .feature-container .texts {
         width: 30%;
@@ -184,22 +187,43 @@
     .feature-container .feature-image {
         width: 70%;
         background-position: center center;
+        height: auto;
+    }
+
+    .texts p:first-child {
+        font-size: 1.6rem;
+    }
+    
+    .texts p {
+        font-size: 1rem;
     }
 
     /* Favorite Slider CSS */
 
+
     .favorite-desktop {
         display: flex;
         flex-direction: row;
+        margin-bottom: 
     }
     .favorite-desktop .slider-image-container {
         height: 34vw;
         width: 80%;
     }
 
+    .favorites-container {
+        margin: 2rem 0 7rem;
+    }
+
     /* About */
     .about {
-        padding: 4rem 25rem;
-        font-size: 1.1rem;
+        padding: 5rem;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-content {
+        max-width: 40%;
     }
 }
