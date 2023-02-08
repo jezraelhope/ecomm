@@ -47,7 +47,14 @@ const Footer = () => {
                     friends call her and her preferred name.
                 </p>
                 <p className="footer-footer">
-                    website created by Jezrael Hope Magat
+                    website created by Jezrael Hope Magat • see more projects
+                    like this on her{' '}
+                    <a
+                        href="https://jezraelhope.onrender.com/"
+                        style={{ color: 'inherit' }}
+                    >
+                        portfolio
+                    </a>
                 </p>
             </div>
         </footer>
