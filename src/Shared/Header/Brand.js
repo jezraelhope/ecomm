@@ -1,17 +1,15 @@
 import React from 'react';
 
-import {
-  Link,
-} from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 const Brand = (props) => {
-	return (
-        <Link to="/products" className="brand">
+    return (
+        <Link to="https://nzm.netlify.app/" className="brand">
             <header onClick={props.filterItems}>
-              <h1>NZM</h1>
+                <h1>NZM</h1>
             </header>
         </Link>
     );
-}
+};
 
-export default Brand
+export default Brand;
